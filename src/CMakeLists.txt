@@ -11,6 +11,6 @@ add_definitions(-Wall -Werror -std=c++14)
 
 add_executable(${PROJECT_NAME} ${SRC})
 
-target_link_libraries(${PROJECT_NAME})
+target_link_libraries(${PROJECT_NAME} tinyxml2)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION ${INSTALL_NAME_DIR})
